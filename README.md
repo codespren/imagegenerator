@@ -1,4 +1,4 @@
-Image generator
+# Image generator
 
 Generates all 1000 * 1000 pixel images. Images are created in a random order and there may be duplicates but eventually
 all possible images are created.
@@ -12,16 +12,16 @@ The program has some interesting features, for example among the images generate
 - Photo of you reading this file.
 - Photo of the alien lifeform that is living closest to us.
 
-Usage:
+## Usage:
 
 Build:
-dotnet build
+`dotnet build`
 
 Create 10 test images:
-dotnet run test
+`dotnet run test`
 
 Create all images (make sure you have enough disk space):
-dotnet run all
+`dotnet run all`
 
 The program will create a folder named '0' and create first 18446744073709551615 images in to that folder.
 After that, it will create a second folder named '1' and create next 18446744073709551615 images to that folder and so on.

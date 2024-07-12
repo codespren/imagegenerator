@@ -24,7 +24,7 @@ public class ImageGenerator {
 		else {
 			Console.WriteLine("Run with a parameter 'all' to create all images or with 'test' to create 10 test images.");
 		}
-    }
+	}
 
 
 	/***/
@@ -47,7 +47,7 @@ public class ImageGenerator {
 	/***/
 	private void createImage() {
 		SKBitmap bitmap = new SKBitmap(imageWidth, imageWidth);
-    	using SKCanvas canvas = new SKCanvas(bitmap);
+		using SKCanvas canvas = new SKCanvas(bitmap);
     	
 		SKPoint point = new SKPoint();
 		byte[] rgb = new byte[3];
@@ -74,8 +74,8 @@ public class ImageGenerator {
 		}
 
 		using FileStream fileStream = new FileStream(imageName, FileMode.Create, FileAccess.Write);
-    	using SKImage image = SKImage.FromBitmap(bitmap); 
-    	using SKData data = image.Encode(); 
-    	data.SaveTo(fileStream);
+		using SKImage image = SKImage.FromBitmap(bitmap); 
+		using SKData data = image.Encode(); 
+		data.SaveTo(fileStream);
 	}
 }}
